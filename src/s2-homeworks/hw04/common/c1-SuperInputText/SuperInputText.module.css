@@ -1,0 +1,33 @@
+.input:focus {
+}
+
+.input {
+    width: 372px;
+    height: 36px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+}
+
+.inputWrapper {
+}
+
+.superInput {
+}
+
+.errorInput {
+    color: #cc0000;
+    border: 1px solid red;
+}
+
+.errorInput:focus {
+    outline: none;
+
+}
+
+.error {
+
+}
+
+.errorText {
+    color: red;
+}
