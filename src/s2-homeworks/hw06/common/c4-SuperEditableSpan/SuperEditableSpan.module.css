@@ -1,0 +1,21 @@
+.spanBlock {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.span {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    color: #0080FF;
+    padding: 5px 5px 5px 15px;
+}
+
+.input {
+    font-family: 'Montserrat';
+    font-style: normal;
+
+}
+
+.pen {
+}
