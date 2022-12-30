@@ -1,0 +1,29 @@
+.select {
+    min-width: 170px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid #C2C2C2;
+    border-radius: 2px;
+    padding: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 120px 0 0;
+    outline: none;
+}
+
+.select:focus {
+    cursor: pointer;
+    /*background: #0066CC;*/
+}
+
+.select:hover {
+    cursor: pointer;
+}
+
+.option {
+
+}
+
+.option:hover {
+
+}
