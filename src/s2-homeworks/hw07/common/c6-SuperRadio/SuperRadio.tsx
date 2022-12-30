@@ -45,33 +45,31 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
     const spanClassName = s.span + (spanProps?.className ? ' ' + spanProps.className : '')
 
     const mappedOptions: any[] = options
-        ? options.map(o => (
-              <label key={name + '-' + o.id} className={s.label}>
-                  <input
-                      id={id + '-input-' + o.id}
-                      className={finalRadioClassName}
-                      type={'radio'}
-                      // name, checked, value делают студенты
-                      // http://htmlbook.ru/html/input/name
-                      //checked={o.id === ...может попробовать значение которое тянем из HW7?}
-                      checked={o.id === value}
-                      name={o.name}
-                      value={o.id}
-
-
-
-                      onChange={onChangeCallback}
-                      {...restProps}
-                  />
-                  <span
-                      id={id + '-span-' + o.id}
-                      {...spanProps}
-                      className={spanClassName}
-                  >
+        ? options.map(o => {
+            return (
+                (
+                    <label key={name + '-' + o.id} className={s.label}>
+                        <input
+                            id={id + '-input-' + o.id}
+                            className={finalRadioClassName}
+                            type={'radio'}
+                            name={name}
+                            checked={o.id === value}
+                            value={o.id}
+                            onChange={onChangeCallback}
+                            {...restProps}
+                        />
+                        <span
+                            id={id + '-span-' + o.id}
+                            {...spanProps}
+                            className={spanClassName}
+                        >
                       {o.value}
                   </span>
-              </label>
-          ))
+                    </label>
+                )
+            )
+        })
         : []
 
     return <div className={s.options}>{mappedOptions}</div>
